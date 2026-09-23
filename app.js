@@ -730,8 +730,14 @@ function registerProvinceFonts() {
     const key = province.name.replace(/^Thành phố\s+/i, '')
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
       .replace(/[đĐ]/g, 'd').toUpperCase().replace(/[^A-Z0-9]/g, '');
-    const sources = [['ttf', 'truetype'], ['otf', 'opentype'], ['woff2', 'woff2'], ['woff', 'woff']]
-      .map(([extension, format]) => `url("assets/FONT 34 TINH THANH/${key}-Regular.${extension}") format("${format}")`);
+    const encodedDir = encodeURI('assets/FONT 34 TINH THANH');
+    const sources = [
+      `url("${encodedDir}/${key}-Regular.ttf") format("truetype")`,
+      `url("${encodedDir}/${key}-REGULAR.TTF") format("truetype")`,
+      `url("${encodedDir}/${key}-Regular.otf") format("opentype")`,
+      `url("${encodedDir}/${key}-Regular.woff2") format("woff2")`,
+      `url("${encodedDir}/${key}-Regular.woff") format("woff")`
+    ];
     return `@font-face { font-family: "${province.numberFont}"; src: ${sources.join(',')}; font-weight: 400; font-style: normal; font-display: swap; }`;
   }).join('\n');
   document.head.appendChild(style);
