@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bộ sưu tập áo bóng đá 34 Tỉnh Thành Việt Nam. Thiết kế độc bản, kết tinh bản sắc văn hóa địa phương. Phiên bản rút gọn nhanh chóng.">
+  <meta name="keywords" content="Áo bóng đá, 34 Tỉnh Thành, Đồ thể thao Việt Nam, Áo thun bóng đá, Thiết kế bóng đá, Bản sắc Việt Nam">
+  <meta name="author" content="Sportswear Campaign">
+  <title>Bộ Sưu Tập Áo Bóng Đá 34 Tỉnh Thành | Phiên Bản Rút Gọn</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css?v=20260916-8">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,15 90,85 10,85' fill='%23da251d'/%3E%3C/svg%3E">
+</head>
+<body class="compact-page">
+
+  <!-- SECTION 01 — NAVIGATION -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        VN<span>/34</span>
+        <span class="logo-sub">Province Collection</span>
+      </a>
+      
+      <ul class="nav-links" style="display: flex;">
+        <li><a href="#hero">Bộ sưu tập</a></li>
+        <li><a href="#collection-grid-sec">34 Tỉnh Thành</a></li>
+        <li><a href="#personalization">Tự thiết kế</a></li>
+      </ul>
+      
+      <div class="nav-cta" style="display: flex; align-items: center; gap: 1.5rem;">
+        <a href="index.html" class="btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.8rem;">BẢN ĐẦY ĐỦ</a>
+        <a href="#collection-grid-sec" class="btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.8rem;">KHÁM PHÁ BST</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 02 — HERO CAMPAIGN -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    
+    <div class="container hero-grid">
+      <div class="hero-content reveal active">
+        <span class="campaign-tag">VIETNAM PROVINCE COLLECTION / 2026</span>
+        <h1 class="hero-title text-gradient">
+          34 TỈNH THÀNH
+          <span class="text-vietnam-gradient">34 BẢN SẮC</span>
+          MỘT VIỆT NAM
+        </h1>
+        <p class="hero-description">
+          Khám phá Việt Nam qua bộ sưu tập bóng đá đặc biệt lấy cảm hứng từ linh hồn văn hóa, lịch sử địa danh của 34 tỉnh thành cả nước. Thiết kế chuyên nghiệp, đậm đà lòng tự hào địa phương.
+        </p>
+        
+        <div class="hero-ctas">
+          <a href="#collection-grid-sec" class="btn-primary">KHÁM PHÁ BỘ SƯU TẬP</a>
+          <a href="index.html#collection-grid-sec" class="btn-secondary">TÌM TỈNH CỦA BẠN</a>
+        </div>
+      </div>
+      <div class="hero-visual hero-map-visual reveal active delay-2">
+        <div class="hero-map-frame" data-province-map></div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- SECTION 05 & 06 — 34 PROVINCE COLLECTION & FILTER -->
+  <section class="collection-section" id="collection-grid-sec">
+    <div class="container">
+      <div class="section-header reveal active">
+        <h2>THE 34 COLLECTION</h2>
+        <p>Chọn vùng miền hoặc tìm kiếm để khám phá nhanh thiết kế áo đấu quê hương bạn</p>
+      </div>
+      
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal active">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Tìm tỉnh / thành phố của bạn..." id="search-input">
+        </div>
+        
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">TẤT CẢ</button>
+          <button class="filter-tab" data-filter="bac">MIỀN BẮC</button>
+          <button class="filter-tab" data-filter="trung">MIỀN TRUNG</button>
+          <button class="filter-tab" data-filter="nam">MIỀN NAM</button>
+        </div>
+      </div>
+      
+      <!-- 34 Grid of Cards -->
+      <div class="grid-34" id="collection-grid">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 13 — PERSONALIZATION & CUSTOMIZER -->
+  <section class="customizer-section" id="personalization">
+    <div class="container customizer-grid">
+      <div class="customizer-preview reveal active">
+        <div id="customizer-preview"></div>
+        <div class="customizer-preview-controls">
+          <button class="view-btn active" data-view="front">Mặt trước</button>
+          <button class="view-btn" data-view="back">Mặt sau</button>
+        </div>
+      </div>
+      
+      <div class="customizer-options reveal active delay-2">
+        <h2>BIẾN THIẾT KẾ THÀNH ĐỘI BÓNG CỦA BẠN</h2>
+        <p>Cá nhân hóa chiếc áo đấu quê hương. Nhập tên, số áo và lựa chọn màu sắc cơ bản yêu thích để xem bản mô phỏng 3D tức thì.</p>
+        
+        <div class="customizer-form" id="customizer-form">
+          <div class="form-group">
+            <label for="cust-province">Chọn Tỉnh Thành</label>
+            <select id="cust-province">
+              <!-- Injected via JS -->
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="cust-name">Tên Của Bạn (Tối đa 16 ký tự)</label>
+            <input type="text" id="cust-name" value="VIETNAM" maxlength="16" placeholder="Nhập tên của bạn...">
+          </div>
+          
+          <div class="form-group">
+            <label for="cust-number">Số Áo Của Bạn (00 - 99)</label>
+            <input type="number" id="cust-number" value="34" min="0" max="99" placeholder="Nhập số áo...">
+          </div>
+
+          <div class="form-group color-pickers-group" style="display: flex; gap: 1rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 0.5rem;">
+              <label for="cust-color-primary" style="font-size: 0.75rem; color: var(--color-muted); text-transform: uppercase;">Màu chính</label>
+              <input type="color" id="cust-color-primary" value="#da251d" style="width: 100%; height: 45px; padding: 2px; border: 1px solid var(--color-light-gray); background: var(--color-charcoal); cursor: pointer;">
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 0.5rem;">
+              <label for="cust-color-secondary" style="font-size: 0.75rem; color: var(--color-muted); text-transform: uppercase;">Màu phối</label>
+              <input type="color" id="cust-color-secondary" value="#ffbe00" style="width: 100%; height: 45px; padding: 2px; border: 1px solid var(--color-light-gray); background: var(--color-charcoal); cursor: pointer;">
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 0.5rem;">
+              <label for="cust-color-accent" style="font-size: 0.75rem; color: var(--color-muted); text-transform: uppercase;">Chi tiết</label>
+              <input type="color" id="cust-color-accent" value="#ffffff" style="width: 100%; height: 45px; padding: 2px; border: 1px solid var(--color-light-gray); background: var(--color-charcoal); cursor: pointer;">
+            </div>
+          </div>
+          
+          <button class="btn-primary" onclick="alert('Bản vẽ thiết kế của bạn đã được lưu! Liên hệ đặt may riêng sẽ sử dụng bản vẽ này.')">
+            YÊU CẦU ĐẶT IN BẢN THIẾT KẾ NÀY
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 15 — FINAL CTA -->
+  <section class="final-cta" id="final-cta">
+    <div class="final-cta-glow"></div>
+    <div class="container final-cta-content reveal active">
+      <h2>BẠN ĐẾN TỪ ĐÂU?</h2>
+      <p>Hãy tìm màu áo của quê hương mình và mang bản sắc tự hào ra sân bóng ngay hôm nay.</p>
+      
+      <div class="final-cta-buttons">
+        <a href="#collection-grid-sec" class="btn-primary">KHÁM PHÁ 34 THIẾT KẾ</a>
+        <a href="#" class="btn-secondary" onclick="alert('Đội ngũ tư vấn sẽ hỗ trợ đặt hàng qua Zalo/Hotline: 1900.xxxx')">LIÊN HỆ ĐẶT MAY</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 16 — FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <a href="#" class="logo">
+          VN<span>/34</span>
+          <span class="logo-sub">Province Collection</span>
+        </a>
+        <p>Bộ sưu tập áo bóng đá truyền cảm hứng văn hóa lớn nhất Việt Nam. Thiết kế độc quyền và sản xuất cao cấp.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Khu vực</h4>
+        <ul class="footer-links">
+          <li><a href="#collection-grid-sec">Miền Bắc</a></li>
+          <li><a href="#collection-grid-sec">Miền Trung</a></li>
+          <li><a href="#collection-grid-sec">Miền Nam</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <ul class="footer-links">
+          <li><a href="#">Size Áo Đấu</a></li>
+          <li><a href="#">Chính sách đổi trả</a></li>
+          <li><a href="#">Zalo: 09xx.xxx.xxx</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 VN/34 Collection. Bảo lưu mọi quyền.</p>
+      <div class="footer-signature">DESIGNED IN VIETNAM</div>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC PRODUCT DETAIL VIEW MODAL -->
+  <div class="detail-modal" id="detail-modal">
+    <div class="modal-content">
+      <!-- Injected dynamically via JS inside app.js -->
+    </div>
+  </div>
+
+  <!-- JavaScript Application Script -->
+  <script src="province-map.js?v=20260916-6"></script>
+  <script src="app.js?v=20260911-30"></script>
+</body>
+</html>
